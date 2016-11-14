@@ -1,5 +1,9 @@
 function handle () {
-    if(document.getElementById("box").checked === true) {
+    if(document.getElementById("country").value === "") {
+        document.getElementById("country"). value = "Please enter a country here";
+        document.getElementById("result").innerHTML = "";
+        
+    } else if(document.getElementById("box").checked === true) {
         var httpRequest = new XMLHttpRequest();
 
         var place = document.getElementsByName("country")[0].value;
@@ -16,7 +20,7 @@ function handle () {
     var httpRequest = new XMLHttpRequest();
 
     var place = document.getElementsByName("country")[0].value;
-    
+
     httpRequest.open("GET", "world.php?country="+place, true);
 	httpRequest.send();
 	httpRequest.onreadystatechange = function() {
