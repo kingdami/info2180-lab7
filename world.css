@@ -4,6 +4,8 @@ body {
     margin-left: auto;
     margin-right:auto;
     text-align: center;
+    background-image: url(http://wall-papers.info/images/photo-backgrounds/photo-backgrounds-17.jpg);
+    background-size: auto;
 }
 
 #controls {
@@ -47,4 +49,20 @@ label{
 
 #result {
     text-align: left;
+    color: white;
+}
+
+#country {
+    border-radius: 3%;
+    font-family: Arial;
+    background-color: transparent;
+    border-color: white;
+    padding: 5px;
+    margin-bottom: 15px;
+    color: white;
+    width: 40%;
+}
+
+label {
+    font-size: large;
 }
